@@ -4,7 +4,7 @@
   "description": "Tiny library to run AWS lambdas",
   "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
+    "start": "rm -rf dist && tsc && node dist/app.js",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts"
   },
   "author": "Ricardo Cámara <rcamara9@gmail.com>",
